@@ -1,0 +1,68 @@
+.fronedge-overseas {
+  text-align: center;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  min-height: 60vh; 
+  padding-bottom: 40px;
+}
+
+.fronedge-heading {
+  font-size: 28px;
+  font-weight: bold;
+  color: #7e533d;
+  margin-bottom: 20px; 
+  padding-bottom: 4px; 
+  border-bottom: 2px solid #e7d918; 
+  display: inline-block;
+  width: fit-content; 
+  text-align: center; 
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
+.fronedge-slider {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 30px; 
+  justify-content: center; 
+}
+
+.slider-item {
+  background-color: #dcdcdc; 
+  padding: 20px;
+  border-radius: 0px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 180px; 
+  height: 250px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  align-items: center;
+  gap: 10px; 
+}
+
+.slider-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  text-align: center;
+}
+
+.slider-description {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
+  text-align: center;
+  margin: 0;
+}
+
+.slider-logo {
+  width: 70px;
+  height: 70px; 
+  object-fit: contain; 
+}

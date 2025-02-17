@@ -1,0 +1,205 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 40px; 
+  box-sizing: border-box;
+  z-index: 1000;
+  background-color: transparent; 
+  transition: background-color 0.3s, color 0.3s; 
+}
+
+.header.scrolled {
+  background-color: #616161; 
+  color: #fff;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; 
+}
+
+.nav ul {
+  display: flex;
+  align-items: center; 
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul li {
+  position: relative;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.nav ul li:nth-child(1) { 
+  margin-right: 35px;
+}
+.nav ul li:nth-child(2) { 
+  margin-right: 5px;
+}
+.nav ul li:nth-child(3) { 
+  margin-right: 5px;
+}
+.nav ul li:nth-child(4) { 
+  margin-right: 5px;
+}
+
+.nav ul li a,
+.nav ul li button {
+  text-decoration: none;
+  background: none;
+  color: white; 
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.header.scrolled .nav ul li a,
+.header.scrolled .nav ul li button {
+  color: white; 
+}
+
+.dropdown-parent {
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  top: calc(100% + 1px);
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 0px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+  min-width: 200px;
+  z-index: 20;
+  display: none;
+  border-top: 1px solid #ccc;
+}
+
+.dropdown-parent:hover .dropdown {
+  display: block;
+}
+
+.dropdown p {
+  margin: 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8); 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown p:hover {
+  background-color: #f0f0f0; 
+}
+
+.dropdown-pointer {
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid rgba(255, 255, 255, 0.95);
+}
+
+.dropdown p .content {
+  color: black !important;
+}
+
+.nav ul li a:focus,
+.nav ul li button:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px; 
+  right: 20px; 
+  background-color: #25d366; 
+  border-radius: 50%; 
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-icon:hover {
+  background-color: #25d366; 
+}
+
+.nav ul li:nth-child(2) {
+  position: relative; 
+}
+
+.nav ul li:nth-child(2) .dropdown {
+  position: absolute;
+  top: 170%; 
+  left: -25px; 
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 0px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+  min-width: 200px;
+  z-index: 20;
+  visibility: hidden;
+  opacity: 0; 
+  transform: translateY(10px); 
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  pointer-events: none; 
+}
+
+.nav ul li:nth-child(2):hover .dropdown,
+.nav ul li:nth-child(2) .dropdown:hover {
+  visibility: visible;
+  opacity: 1; 
+  transform: translateY(0); 
+  pointer-events: auto; 
+}
+
+.nav ul li:nth-child(2):hover::after {
+  content: "";
+  position: absolute;
+  top: 100%; 
+  left: -50px;
+  width: 300px; 
+  height: 20px; 
+  pointer-events: auto; 
+}
+
+.nav ul li:nth-child(2) .dropdown-pointer {
+  position: absolute;
+  top: -10px; 
+  left: 20px; 
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid rgba(255, 255, 255, 0.95);
+}
+
+.nav ul li:nth-child(2) .dropdown p {
+  margin: 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav ul li:nth-child(2) .dropdown p:hover {
+  background-color: #f0f0f0;
+}

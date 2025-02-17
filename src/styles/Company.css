@@ -1,0 +1,36 @@
+.company-section {
+    position: relative;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 20px;
+    color: white; 
+    opacity: 0.9; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 10vh; 
+  }
+  
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    text-align: left; 
+    width: 100%;
+    max-width: 800px; 
+  }
+  
+  .company-heading {
+    font-size: 20px; 
+    font-weight: bold;
+    color: white; 
+    margin-bottom: 20px; 
+    width: 100%;
+  }
+  
+  .company-content {
+    font-size: 16px; 
+    line-height: 1.6;
+  }
+  

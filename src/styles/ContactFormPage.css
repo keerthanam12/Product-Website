@@ -1,0 +1,172 @@
+.contact-slider-page {
+  background-color: white;
+  width: 35%; 
+  height: 650px;
+  border-radius: 0px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding-right: 20px; 
+  position: relative;
+  margin-top: -90px;
+  left: -120px;
+  }
+  
+  .contact-header-page {
+    background-color: #7e533d; 
+    padding: 30px;
+    width: 200%; 
+    box-sizing: border-box;
+  }
+  
+  .contact-header-page h2, .contact-header-page h3 {
+    color: white; 
+    margin: 0;
+    font-size: 24px;
+    text-align: left;
+  }
+  
+  .contact-header-page h3 {
+    font-size: 18px; 
+  }
+  
+  .contact-form-page {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .form-input-page, .form-textarea-page {
+    width: 100%;
+    padding: 8px; 
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    font-size: 12px; 
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-input-page:focus, .form-textarea-page:focus {
+    border-color: black;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .form-textarea-page {
+    height: 100px; 
+    resize: none;
+  }
+  
+  .send-button-page {
+    background-color: #f8e80c; 
+    color: rgb(51, 51, 51);
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 0px;
+    font-size: 15px; 
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .send-button-page:hover {
+    background-color: #f8e80c; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-status {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .form-status.error {
+    color: red;
+  }
+  
+  .form-status.success {
+    color: green;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-slider-page {
+      width: 90%;
+    }
+    .contact-form-page {
+      padding: 15px;
+    }
+  }
+
+  .notification-box {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 0px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 5px solid green;
+    z-index: 1000;
+    font-size: 16px;
+    width: 300px;
+    gap: 10px;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .notification-box .icon-tick {
+    width: 24px;
+    height: 24px;
+    border-radius: 0%;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .notification-box.error {
+    border-bottom-color: red;
+  }
+  
+  .notification-box.error .icon-tick {
+    background-color: red;
+    color: black;
+  }
+  
+  .notification-box .close-btn {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .error-input {
+    border-color: red;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.3);
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .form-group-page {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  } 
