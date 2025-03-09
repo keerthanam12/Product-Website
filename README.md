@@ -1,9 +1,9 @@
 # 🔗 Project Title
-Product Website - Fornedge Overseas Pvt Ltd
+Product Website - Fronedge Overseas Pvt Ltd
 
 
 # 🔗 Project Description
-Product Website is a custom-built platform developed for Fornedge Overseas Pvt Ltd. An international import & export business. I created this website specifically for the company to enhance their online presence and streamline their customer interactions. The platform serves as a digital showcase for their products, providing customers with essential product details, company information, and a seamless buying experience. The website features a modern and user-friendly design, ensuring smooth navigation across all devices. Customers can explore products, view details, and connect with the company through a contact form and WhatsApp integration for quick inquiries and purchases. This platform helps Fornedge Overseas Pvt Ltd. strengthen its digital presence and reach a wider audience efficiently.
+Product Website is a custom-built platform developed for Fronedge Overseas Pvt Ltd. An international import & export business. I created this website specifically for the company to enhance their online presence and streamline their customer interactions. The platform serves as a digital showcase for their products, providing customers with essential product details, company information, and a seamless buying experience. The website features a modern and user-friendly design, ensuring smooth navigation across all devices. Customers can explore products, view details, and connect with the company through a contact form and WhatsApp integration for quick inquiries and purchases. This platform helps Fronedge Overseas Pvt Ltd. strengthen its digital presence and reach a wider audience efficiently.
 
 
 ## 🖥️ Tech Stack
